@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Ensure you have a stylesheet for styling -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, <%= user %></h1>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </div>
+
+        <h2>Featured Movies</h2>
+        <div class="movies">
+            <!-- Example movie entries -->
+            <div class="movie">
+                <img src="https://media.istockphoto.com/id/596382080/photo/burrito-with-grilled-chicken-and-vegetables.jpg?s=612x612&w=0&k=20&c=Yyz12whuehrCJYrzR-gx-90Zp-ip60b5kmGO7gDII1A=" alt="Movie 1">
+                <div class="movie-title">Shawarma</div>
+            </div>
+            <div class="movie">
+                <img src="https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg" alt="Movie 2">
+                <div class="movie-title">Burger</div>
+            </div>
+            <div class="movie">
+                <img src="https://img.freepik.com/free-photo/plate-biryani-with-bowl-rice-bowl-food-table_505751-3814.jpg" alt="Movie 3">
+                <div class="movie-title">Biryani</div>
+            </div>
+            <!-- Add more movie entries as needed -->
+        </div>
+    </div>
+</body>
+</html>
